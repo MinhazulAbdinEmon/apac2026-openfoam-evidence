@@ -1,0 +1,13 @@
+# Never commit raw OpenFOAM decomposed mesh/data
+processor*/
+**/processor*/
+
+# Never commit raw polyMesh directories
+polyMesh/
+**/polyMesh/
+
+# Temporary/editor files
+*.swp
+*.tmp
+*~
+.DS_Store

@@ -1,0 +1,4 @@
+IRIS-BASE-01 RUNTIME VERIFICATION
+startFrom       startTime;
+startTime       0;
+endTime         40;
