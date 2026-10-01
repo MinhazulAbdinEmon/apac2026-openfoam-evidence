@@ -1,0 +1,25 @@
+=== IRIS-DECOMP-03 CONFIG VERIFICATION ===
+
+fvSolution vs fvSolution.fixedIter:
+EXACT MATCH
+
+SHA256:
+5e1db8548ee82c44f8fa3377a80971af2b5aabb95b3ee7efcd8b723c5dcab1ba  ../artifacts/ready-N112-scotch/system/fvSolution
+5e1db8548ee82c44f8fa3377a80971af2b5aabb95b3ee7efcd8b723c5dcab1ba  ../artifacts/ready-N112-scotch/system/fvSolution.fixedIter
+
+Case decomposition settings:
+nCores              112;
+decompositionMethod scotch;
+nHierarchical       (7 4 4);
+
+Runtime control settings:
+startFrom       startTime;
+startTime       0;
+endTime         80;
+
+READY:
+N=112
+method=scotch
+nHierarchical=unused
+mesh=occDrivAer-65M
+stages=decomposePar restore0Dir renumberMesh potentialFoam applyBoundaryLayer

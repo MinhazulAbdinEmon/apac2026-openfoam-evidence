@@ -1,0 +1,17 @@
+=== IRIS-DECOMP-03 RUNTIME VERIFICATION ===
+
+Runtime controlDict:
+startFrom       startTime;
+startTime       0;
+endTime         80;
+
+Runtime decomposition:
+nCores              112;
+decompositionMethod scotch;
+nHierarchical       (7 4 4);
+
+Solver result:
+    Average wall-clock time per time step = 10.51625311116456
+
+Final Cd:
+80                      	3.3940695876673532e-01	1.6325388041680819e-01	1.7615307834992711e-01	1.2001551413424383e-01	-2.1060751780670670e-02	1.4107626591491451e-01	-8.1068508847792584e-02	-6.4495989665594774e-03	3.3259948746039228e-03	1.1633941368870082e-02	9.1429655590389639e-03	2.4909758098311183e-03
