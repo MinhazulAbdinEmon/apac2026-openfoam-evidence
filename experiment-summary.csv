@@ -1,3 +1,4 @@
 experiment,platform,nodes,ranks,method,nHierarchical,iterations,time_per_step_s,Cd,job_id,status,decision
 IRIS-BASE-01,Iris,1,56,hierarchical,"(7 4 2)",40,21.27342698120513,0.44055438144779518,626267,VALID,BASELINE
 IRIS-SCALE-02,Iris,2,112,hierarchical,"(7 4 4)",80,11.05076184934177,0.33859083941328877,626341,VALID,KEEP
+IRIS-DECOMP-03,Iris,2,112,scotch,"unused",80,10.51625311116456,0.33940695876673532,626598,VALID,KEEP
