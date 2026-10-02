@@ -1,0 +1,19 @@
+# started on Fri Oct  2 04:34:34 2026
+
+
+ Performance counter stats for 'simpleFoam -parallel':
+
+         854406.41 msec task-clock                       #    0.993 CPUs utilized             
+     2715789278204      cycles                           #    3.179 GHz                       
+     1916018120534      instructions                     #    0.71  insn per cycle            
+       37390641083      cache-references                 #   43.762 M/sec                     
+       34770205032      cache-misses                     #   92.99% of all cache refs         
+      315455545989      branches                         #  369.210 M/sec                     
+        4751534754      branch-misses                    #    1.51% of all branches           
+
+     860.714447740 seconds time elapsed
+
+     840.027595000 seconds user
+       9.379775000 seconds sys
+
+
