@@ -1,0 +1,48 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 85K of event 'cycles:u'
+# Event count (approx.): 2636553325092
+#
+# Overhead  Command          Shared Object                         Symbol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+# ........  ...............  ....................................  ....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+#
+    18.44%  simpleFoam       libOpenFOAM.so                        [.] Foam::GaussSeidelSmoother::smooth(Foam::word const&, Foam::Field<double>&, Foam::lduMatrix const&, Foam::Field<double> const&, Foam::FieldField<Foam::Field, double> const&, Foam::UPtrList<Foam::lduInterfaceField const> const&, unsigned char, int)
+    11.97%  simpleFoam       libOpenFOAM.so                        [.] Foam::lduMatrix::residual(Foam::Field<double>&, Foam::Field<double> const&, Foam::Field<double> const&, Foam::FieldField<Foam::Field, double> const&, Foam::UPtrList<Foam::lduInterfaceField const> const&, unsigned char) const
+     6.60%  simpleFoam       libc.so.6                             [.] __memmove_evex_unaligned_erms
+     6.17%  simpleFoam       libOpenFOAM.so                        [.] Foam::lduMatrix::Amul(Foam::Field<double>&, Foam::tmp<Foam::Field<double> > const&, Foam::FieldField<Foam::Field, double> const&, Foam::UPtrList<Foam::lduInterfaceField const> const&, unsigned char) const
+     3.25%  simpleFoam       libOpenFOAM.so                        [.] Foam::multiply(Foam::Field<double>&, Foam::UList<double> const&, Foam::UList<double> const&)
+     2.23%  simpleFoam       libfiniteVolume.so                    [.] Foam::fv::gaussGrad<double>::gradf(Foam::GeometricField<double, Foam::fvsPatchField, Foam::surfaceMesh> const&, Foam::word const&)
+     2.07%  simpleFoam       libfiniteVolume.so                    [.] Foam::tmp<Foam::GeometricField<Foam::innerProduct<Foam::geometricOneField::value_type, double>::type, Foam::fvsPatchField, Foam::surfaceMesh> > Foam::surfaceInterpolationScheme<double>::dotInterpolate<Foam::geometricOneField>(Foam::geometricOneField const&, Foam::GeometricField<double, Foam::fvPatchField, Foam::volMesh> const&, Foam::tmp<Foam::GeometricField<double, Foam::fvsPatchField, Foam::surfaceMesh> > const&)
+     1.96%  simpleFoam       libuct.so.0.0.0                       [.] uct_mm_iface_progress
+     1.63%  simpleFoam       libc.so.6                             [.] __memset_evex_unaligned_erms
+     1.58%  simpleFoam       libOpenFOAM.so                        [.] Foam::GAMGSolver::scale(Foam::Field<double>&, Foam::Field<double>&, Foam::lduMatrix const&, Foam::FieldField<Foam::Field, double> const&, Foam::UPtrList<Foam::lduInterfaceField const> const&, Foam::Field<double> const&, unsigned char) const
+     1.54%  simpleFoam       libucc_tl_shm.so.1.0.0                [.] ucc_tl_shm_reduce_read
+     1.42%  simpleFoam       libfiniteVolume.so                    [.] Foam::tmp<Foam::GeometricField<Foam::innerProduct<Foam::GeometricField<Foam::Vector<double>, Foam::fvsPatchField, Foam::surfaceMesh>::value_type, Foam::Vector<double> >::type, Foam::fvsPatchField, Foam::surfaceMesh> > Foam::surfaceInterpolationScheme<Foam::Vector<double> >::dotInterpolate<Foam::GeometricField<Foam::Vector<double>, Foam::fvsPatchField, Foam::surfaceMesh> >(Foam::GeometricField<Foam::Vector<double>, Foam::fvsPatchField, Foam::surfaceMesh> const&, Foam::GeometricField<Foam::Vector<double>, Foam::fvPatchField, Foam::volMesh> const&, Foam::tmp<Foam::GeometricField<double, Foam::fvsPatchField, Foam::surfaceMesh> > const&)
+     1.34%  simpleFoam       libuct_ib_mlx5.so.0.0.0               [.] uct_dc_mlx5_iface_progress_ll
+     1.06%  simpleFoam       libfiniteVolume.so                    [.] Foam::tmp<Foam::GeometricField<Foam::innerProduct<Foam::GeometricField<Foam::Vector<double>, Foam::fvsPatchField, Foam::surfaceMesh>::value_type, Foam::Tensor<double> >::type, Foam::fvsPatchField, Foam::surfaceMesh> > Foam::surfaceInterpolationScheme<Foam::Tensor<double> >::dotInterpolate<Foam::GeometricField<Foam::Vector<double>, Foam::fvsPatchField, Foam::surfaceMesh> >(Foam::GeometricField<Foam::Vector<double>, Foam::fvsPatchField, Foam::surfaceMesh> const&, Foam::GeometricField<Foam::Tensor<double>, Foam::fvPatchField, Foam::volMesh> const&, Foam::tmp<Foam::GeometricField<double, Foam::fvsPatchField, Foam::surfaceMesh> > const&)
+     1.06%  simpleFoam       libfiniteVolume.so                    [.] Foam::fv::cellLimitedGrad<Foam::Vector<double>, Foam::fv::gradientLimiters::minmod>::calcGrad(Foam::GeometricField<Foam::Tensor<double>, Foam::fvPatchField, Foam::volMesh>&, Foam::GeometricField<Foam::Vector<double>, Foam::fvPatchField, Foam::volMesh> const&) const
+     1.01%  simpleFoam       libOpenFOAM.so                        [.] Foam::typeOfMag<double>::type Foam::gSumMag<double>(Foam::UList<double> const&, int)
+     0.89%  simpleFoam       libOpenFOAM.so                        [.] Foam::lduMatrix::negSumDiag()
+     0.88%  simpleFoam       libopen-pal.so.80.0.5                 [.] opal_progress
+     0.84%  simpleFoam       simpleFoam                            [.] Foam::tmp<Foam::Field<Foam::typeOfSum<double, double>::type> > Foam::operator-<double, double>(Foam::UList<double> const&, Foam::UList<double> const&)
+     0.79%  simpleFoam       libucp.so.0.0.0                       [.] ucp_worker_progress
+     0.77%  simpleFoam       libfiniteVolume.so                    [.] Foam::Vector<double> Foam::operator&<double>(Foam::Vector<double> const&, Foam::Tensor<double> const&)
+     0.76%  simpleFoam       simpleFoam                            [.] void Foam::fvc::surfaceIntegrate<double>(Foam::Field<double>&, Foam::GeometricField<double, Foam::fvsPatchField, Foam::surfaceMesh> const&)
+     0.72%  simpleFoam       libOpenFOAM.so                        [.] Foam::lduMatrix::operator-=(Foam::lduMatrix const&)
+     0.70%  simpleFoam       libfiniteVolume.so                    [.] void Foam::fvc::surfaceIntegrate<Foam::Vector<double> >(Foam::Field<Foam::Vector<double> >&, Foam::GeometricField<Foam::Vector<double>, Foam::fvsPatchField, Foam::surfaceMesh> const&)
+     0.68%  simpleFoam       libfiniteVolume.so                    [.] void Foam::lduInterfaceField::addToInternalField<double>(Foam::Field<double>&, bool, Foam::UList<int> const&, Foam::Field<double> const&, Foam::Field<double> const&) const
+     0.68%  simpleFoam       libOpenFOAM.so                        [.] void Foam::GAMGAgglomeration::restrictField<double>(Foam::Field<double>&, Foam::Field<double> const&, int, bool) const
+     0.68%  simpleFoam       libOpenFOAM.so                        [.] Foam::lduMatrix::sumA(Foam::Field<double>&, Foam::FieldField<Foam::Field, double> const&, Foam::UPtrList<Foam::lduInterfaceField const> const&) const
+     0.66%  simpleFoam       libfiniteVolume.so                    [.] Foam::linearUpwindV<Foam::Vector<double> >::correction(Foam::GeometricField<Foam::Vector<double>, Foam::fvPatchField, Foam::volMesh> const&) const
+     0.66%  simpleFoam       libfiniteVolume.so                    [.] Foam::GeometricField<Foam::Vector<double>, Foam::fvPatchField, Foam::volMesh>::GeometricField(Foam::IOobject const&, Foam::fvMesh const&, Foam::Vector<double> const&, Foam::dimensionSet const&, Foam::word const&)
+     0.64%  simpleFoam       libfiniteVolume.so                    [.] Foam::fv::gaussGrad<Foam::Vector<double> >::calcGrad(Foam::GeometricField<Foam::Tensor<double>, Foam::fvPatchField, Foam::volMesh>&, Foam::GeometricField<Foam::Vector<double>, Foam::fvPatchField, Foam::volMesh> const&) const
+     0.57%  simpleFoam       simpleFoam                            [.] Foam::fvMatrix<Foam::Vector<double> >::H() const
+     0.56%  simpleFoam       simpleFoam                            [.] Foam::UList<Foam::Vector<double> >::deepCopy(Foam::UList<Foam::Vector<double> > const&)
+
+
+#
+# (Tip: Search options using a keyword: perf report -h <keyword>)
+#

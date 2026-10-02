@@ -1,0 +1,25 @@
+IRIS-PROFILE-05 runtime verification
+
+fvSolution vs fvSolution.fixedIter:
+EXACT MATCH
+
+fvSolution hashes:
+5e1db8548ee82c44f8fa3377a80971af2b5aabb95b3ee7efcd8b723c5dcab1ba  ../evidence/IRIS-PROFILE-05/runtime-config/fvSolution
+5e1db8548ee82c44f8fa3377a80971af2b5aabb95b3ee7efcd8b723c5dcab1ba  ../evidence/IRIS-PROFILE-05/runtime-config/fvSolution.fixedIter
+
+Runtime controlDict:
+startFrom       startTime;
+startTime       0;
+endTime         80;
+
+Decomposition:
+nCores              112;
+decompositionMethod scotch;
+nHierarchical       (7 4 4);
+
+READY:
+N=112
+method=scotch
+nHierarchical=unused
+mesh=occDrivAer-65M
+stages=decomposePar restore0Dir renumberMesh potentialFoam applyBoundaryLayer
